@@ -7,13 +7,13 @@
         <div class="form-group">
           <label for="minPrice">Price From</label>
           <input type="number" class="form-control ml-1" style="width: 120px" id="minPrice" 
-            [(ngModel)]="apartmentParams.minPrice" name="minPrice">
+            [(ngModel)]="apartmentParams.minPrice" name="minPrice" step="10000">
         </div>
       
         <div class="form-group px-2">
           <label for="maxAge">Price To</label>
           <input type="number" class="form-control ml-1" style="width: 120px" id="maxPrice"
-            [(ngModel)]="apartmentParams.maxPrice" name="maxPrice">
+            [(ngModel)]="apartmentParams.maxPrice" name="maxPrice" step="10000">
         </div>
     
         <div class="form-group px-2">

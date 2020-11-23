@@ -1,6 +1,6 @@
 import { Component, EventEmitter, HostListener, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Apartment } from '../_models/apartment';
 import { AlertifyService } from '../_services/alertify.service';
 import { ApartmentService } from '../_services/apartment.service';
@@ -24,7 +24,7 @@ export class ApartmentDetailComponent implements OnInit {
   }
 
   constructor(private route: ActivatedRoute, private alertify: AlertifyService,
-    private apartmentService: ApartmentService) { }
+    private apartmentService: ApartmentService, private router: Router) { }
 
   ngOnInit() {
     if(!this.item) {
@@ -38,7 +38,8 @@ export class ApartmentDetailComponent implements OnInit {
     if(!this.item) {
       this.apartmentService.updateApartment(this.apartment.id, this.apartment).subscribe(
         next => {
-          this.alertify.success('Profile updated successfully');
+          this.alertify.success('Apartment updated successfully');
+          this.router.navigate(['/apartments']);
         }, error => {
           this.alertify.error(error);
         }
@@ -48,11 +49,13 @@ export class ApartmentDetailComponent implements OnInit {
       this.apartmentService.createApartment(this.newApartment).subscribe(
         next => {
           this.alertify.success('Successfully added new apartment');
+          this.item = false;
+          this.router.navigate(['/home']);
         }, error => {
           this.alertify.error(error);
         }
       );
-      this.editForm.reset(this.apartment);
     }
+    this.editForm.reset(this.apartment);
   }
 }
