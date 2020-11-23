@@ -1,0 +1,77 @@
+<div class="text-center mt-3" *ngIf="!createMode">
+    <h2>{{pagination.totalItems}} Apartment(s) found</h2>
+</div>
+
+<div class="ml-5 mt-3" *ngIf="!createMode">
+    <form class="form-inline ml-5" #form="ngForm" (ngSubmit)="loadApartments()" novalidate>
+        <div class="form-group">
+          <label for="minPrice">Price From</label>
+          <input type="number" class="form-control ml-1" style="width: 120px" id="minPrice" 
+            [(ngModel)]="apartmentParams.minPrice" name="minPrice">
+        </div>
+      
+        <div class="form-group px-2">
+          <label for="maxAge">Price To</label>
+          <input type="number" class="form-control ml-1" style="width: 120px" id="maxPrice"
+            [(ngModel)]="apartmentParams.maxPrice" name="maxPrice">
+        </div>
+    
+        <div class="form-group px-2">
+            <label for="address">Address:</label>
+            <textarea class="form-control rounded-0 ml-1" id="address" 
+                [(ngModel)]="apartmentParams.address" name="address" rows="1"></textarea>
+        </div>
+    
+        <div class="form-group px-2">
+          <label for="rooms">Number of Rooms: </label>
+          <select class="form-control ml-1" style="width: 130px" id="nbOfRooms" name="nbOfRooms" 
+            [(ngModel)]="apartmentParams.nbOfRooms">
+            <option *ngFor="let room of nbOfRoomsList">{{room}}</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-left:10px">Apply Filters</button>
+        <button type="button" class="btn btn-info" (click)="resetFilters()" style="margin-left:10px">Reset Filter</button>
+    </form>
+    <br>
+</div>
+
+<div class="container" *ngIf="!createMode">
+    <table class="table mt-5">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Address</th>
+                <th scope="col">Number of Rooms</th>
+                <th scope="col">Price</th>
+                <th scope="col">Choose</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let apartment of apartments">
+            <tr>
+                <th scope="row">{{ apartment.id }}</th>
+                <td class="title"><a [routerLink]="['/apartment', apartment.id]">{{ apartment.title }}</a></td>
+                <td>{{ apartment.address }}</td>
+                <td>{{ apartment.nbOfRooms }}</td>
+                <td>{{ apartment.price }}</td>
+                <button class="btn btn-success mt-1" [routerLink]="['/buy', apartment.id]">Purchase</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-center" *ngIf="!createMode">
+    <pagination [boundaryLinks]="true" 
+                [totalItems]="pagination.totalItems"
+                [itemsPerPage]="pagination.itemsPerPage"
+                [(ngModel)]="pagination.currentPage"
+                (pageChanged)="pageChanged($event)"
+        previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
+    </pagination>
+</div>
+<div class="text-center" *ngIf="!createMode">
+    <button class="btn btn-primary btn-lg mr-2 justify-content-center" (click) = "createToggle()">
+        Add New Apartment</button>
+</div>
+
+<app-apartment-detail *ngIf="createMode" [item]="createMode"></app-apartment-detail>

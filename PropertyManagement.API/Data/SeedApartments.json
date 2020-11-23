@@ -1,0 +1,92 @@
+[
+  {
+    "Title": "Stone Apartment",
+    "NbOfRooms": 4,
+    "Price": 60000,
+    "Address": "Belfair"
+  },
+  {
+    "Title": "Eunice Apartment",
+    "NbOfRooms": 1,
+    "Price": 15000,
+    "Address": "Roulette"
+  },
+  {
+    "Title": "Daniels Apartment",
+    "NbOfRooms": 7,
+    "Price": 105000,
+    "Address": "Glenville"
+  },
+  {
+    "Title": "Whitney Apartment",
+    "NbOfRooms": 1,
+    "Price": 15000,
+    "Address": "Bartley"
+  },
+  {
+    "Title": "Mallory Apartment",
+    "NbOfRooms": 5,
+    "Price": 75000,
+    "Address": "Brantleyville"
+  },
+  {
+    "Title": "Lillian Apartment",
+    "NbOfRooms": 10,
+    "Price": 150000,
+    "Address": "Russellville"
+  },
+  {
+    "Title": "Powers Apartment",
+    "NbOfRooms": 5,
+    "Price": 75000,
+    "Address": "Loyalhanna"
+  },
+  {
+    "Title": "Guzman Apartment",
+    "NbOfRooms": 5,
+    "Price": 75000,
+    "Address": "Belleview"
+  },
+  {
+    "Title": "Annabelle Apartment",
+    "NbOfRooms": 8,
+    "Price": 120000,
+    "Address": "Fairforest"
+  },
+  {
+    "Title": "Shaw Apartment",
+    "NbOfRooms": 2,
+    "Price": 30000,
+    "Address": "Odessa"
+  },
+  {
+    "Title": "Suarez Apartment",
+    "NbOfRooms": 9,
+    "Price": 135000,
+    "Address": "Derwood"
+  },
+  {
+    "Title": "Angie Apartment",
+    "NbOfRooms": 6,
+    "Price": 90000,
+    "Address": "Golconda"
+  },
+  {
+    "Title": "Gayle Apartment",
+    "NbOfRooms": 3,
+    "Price": 45000,
+    "Address": "Indio"
+  },
+  {
+    "Title": "Kirk Apartment",
+    "NbOfRooms": 2,
+    "Price": 30000,
+    "Address": "Hollins"
+  },
+  {
+    "Title": "Austin Apartment",
+    "NbOfRooms": 4,
+    "Price": 60000,
+    "Address": "Efland"
+  }
+]

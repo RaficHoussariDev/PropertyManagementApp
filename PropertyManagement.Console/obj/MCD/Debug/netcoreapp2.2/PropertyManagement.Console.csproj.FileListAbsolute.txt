@@ -1,0 +1,11 @@
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\obj\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.csprojAssemblyReference.cache
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\obj\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.csproj.CoreCompileInputs.cache
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\obj\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.AssemblyInfoInputs.cache
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\obj\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.AssemblyInfo.cs
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\bin\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.deps.json
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\bin\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.runtimeconfig.json
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\bin\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.runtimeconfig.dev.json
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\bin\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.dll
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\bin\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.pdb
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\obj\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.dll
+C:\Users\Said Dirani\Desktop\PropertyManagement\PropertyManagement.Console\obj\MCD\Debug\netcoreapp2.2\PropertyManagement.Console.pdb

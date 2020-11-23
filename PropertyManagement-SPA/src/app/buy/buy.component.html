@@ -1,0 +1,17 @@
+<form class="form-inline ml-5 mt-5 d-block" #form="ngForm" (ngSubmit)="buy()">
+  <h2 class="text-center text-primary">Choose a buyer</h2>
+  <hr>
+  <div class="form-group justify-content-center">
+    <select class="form-control" style="width: 130px" id="buyerId" name="buyerId" 
+      (change)="setBuyerInfo()" [(ngModel)]="model.buyerId">
+      <option *ngFor="let buyer of buyers">{{ buyer.id }}</option>
+    </select>
+  </div>
+  <div class="form-group justify-content-center">
+    <p class="justify-content-center mt-5" *ngIf="show">
+      You chose {{buyerInfo.fullName}} with a credit of {{buyerInfo.credit}}</p>
+  </div>
+  <div class="form-group justify-content-center mt-5">
+    <button [disabled]="!show" type="submit" class="btn btn-primary" style="margin-left:10px">Purchase</button>
+  </div>
+</form>
